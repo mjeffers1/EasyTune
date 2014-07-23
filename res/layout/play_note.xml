@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black" >
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/orange"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/near_black"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/a_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20sp"
+                    android:background="@null"
+                    android:text="@string/A"
+                    android:textColor="@color/white"
+                    android:textSize="80sp"
+                    android:textStyle="bold" >
+                </Button>
+
+                <Button
+                    android:id="@+id/aSharp_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15sp"
+                    android:background="@null"
+                    android:text="@string/ASharp"
+                    android:textColor="@color/white"
+                    android:textSize="80sp"
+                    android:textStyle="bold" >
+                </Button>
+
+                <Button
+                    android:id="@+id/b_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:background="@null"
+                    android:text="@string/B"
+                    android:textColor="@color/white"
+                    android:textSize="80sp"
+                    android:textStyle="bold" >
+                </Button>
+
+                <Button
+                    android:id="@+id/c_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15sp"
+                    android:background="@null"
+                    android:text="@string/C"
+                    android:textColor="@color/white"
+                    android:textSize="80sp"
+                    android:textStyle="bold" >
+                </Button>
+
+                <Button
+                    android:id="@+id/cSharp_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15sp"
+                    android:background="@null"
+                    android:text="@string/CSharp"
+                    android:textColor="@color/white"
+                    android:textSize="80sp"
+                    android:textStyle="bold" >
+                </Button>
+
+                <Button
+                    android:id="@+id/d_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15sp"
+                    android:background="@null"
+                    android:text="@string/D"
+                    android:textColor="@color/white"
+                    android:textSize="80sp"
+                    android:textStyle="bold" >
+                </Button>
+
+                <Button
+                    android:id="@+id/dSharp_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15sp"
+                    android:background="@null"
+                    android:text="@string/DSharp"
+                    android:textColor="@color/white"
+                    android:textSize="80sp"
+                    android:textStyle="bold" >
+                </Button>
+
+                <Button
+                    android:id="@+id/e_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:background="@null"
+                    android:text="@string/E"
+                    android:textColor="@color/white"
+                    android:textSize="80sp"
+                    android:textStyle="bold" >
+                </Button>
+
+                <Button
+                    android:id="@+id/f_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15sp"
+                    android:background="@null"
+                    android:text="@string/F"
+                    android:textColor="@color/white"
+                    android:textSize="80sp"
+                    android:textStyle="bold" >
+                </Button>
+
+                <Button
+                    android:id="@+id/fSharp_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15sp"
+                    android:background="@null"
+                    android:text="@string/FSharp"
+                    android:textColor="@color/white"
+                    android:textSize="80sp"
+                    android:textStyle="bold" >
+                </Button>
+
+                <Button
+                    android:id="@+id/g_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15sp"
+                    android:background="@null"
+                    android:text="@string/G"
+                    android:textColor="@color/white"
+                    android:textSize="80sp"
+                    android:textStyle="bold" >
+                </Button>
+
+                <Button
+                    android:id="@+id/gSharp_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15sp"
+                    android:background="@null"
+                    android:text="@string/GSharp"
+                    android:textColor="@color/white"
+                    android:textSize="80sp"
+                    android:textStyle="bold" >
+                </Button>
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>

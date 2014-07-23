@@ -1,0 +1,214 @@
+<!-- Same vertical layout -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical" >
+
+    <!-- Textview to show the current tuning the user is in -->
+    <TextView
+        android:id="@+id/tuningName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/StandardTuning"
+        android:textColor="@color/orange"
+        android:textSize="30sp"
+        android:textStyle="bold" >
+    </TextView>
+	
+    <!-- This horizontal scroll view is used to scroll left and right -->
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:scrollbars="none" >
+		
+        <!-- This is used for an orange border around scroll view -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/orange"
+            android:orientation="horizontal"
+            android:paddingBottom="2dp"
+            android:paddingTop="2dp" >
+
+            <!-- This linear layout is used to position the elements in a horizontal row inside the scroll view -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/near_black"
+                android:orientation="horizontal" >
+                
+				<!-- This is a list of all the buttons contained in the scroll view -->
+                <Button
+                    android:id="@+id/string6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:background="@null"
+                    android:text="@string/E"
+                    android:textColor="@color/white"
+                    android:textSize="50sp"
+                    android:textStyle="bold" >
+                </Button>
+
+                <Button
+                    android:id="@+id/string5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20sp"
+                    android:background="@null"
+                    android:text="@string/A"
+                    android:textColor="@color/white"
+                    android:textSize="50sp"
+                    android:textStyle="bold" >
+                </Button>
+
+                <Button
+                    android:id="@+id/string4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15sp"
+                    android:background="@null"
+                    android:text="@string/D"
+                    android:textColor="@color/white"
+                    android:textSize="50sp"
+                    android:textStyle="bold" >
+                </Button>
+
+                <Button
+                    android:id="@+id/string3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15sp"
+                    android:background="@null"
+                    android:text="@string/G"
+                    android:textColor="@color/white"
+                    android:textSize="50sp"
+                    android:textStyle="bold" >
+                </Button>
+
+                <Button
+                    android:id="@+id/string2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:background="@null"
+                    android:text="@string/B"
+                    android:textColor="@color/white"
+                    android:textSize="50sp"
+                    android:textStyle="bold" >
+                </Button>
+
+                <Button
+                    android:id="@+id/string1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10sp"
+                    android:background="@null"
+                    android:text="@string/E"
+                    android:textColor="@color/white"
+                    android:textSize="50sp"
+                    android:textStyle="bold" >
+                </Button>
+            </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Text for what pitch you have to tune to -->
+    <TextView
+        android:id="@+id/TuneToText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/TuneToText"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" >
+    </TextView>
+	
+    <!-- Creating a border for the button -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="10dp"
+        android:background="@color/near_black"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <!-- This shows the pitch of the note the user has selected -->
+        <TextView
+            android:id="@+id/pitch_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:textColor="@color/orange"
+            android:textSize="40sp"
+            android:textStyle="bold" >
+        </TextView>
+    </LinearLayout>
+
+    <!-- Text for your current note -->
+    <TextView
+        android:id="@+id/currentNoteTuning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/YourCurrentPitchText"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" >
+    </TextView>
+
+    <!-- Border for the current pitch note -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="15dp"
+        android:background="@color/near_black"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+		
+        <!-- This text view shows the users current pitch -->
+        <TextView
+            android:id="@+id/current_pitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            android:textStyle="bold" >
+        </TextView>
+    </LinearLayout>
+
+    <!-- This button is used to change tuning -->
+    <Button
+        android:id="@+id/changeTuning"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/roundedbutton"
+        android:text="@string/ChangeTuning"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" >
+    </Button>
+
+</LinearLayout>

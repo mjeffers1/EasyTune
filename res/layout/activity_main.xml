@@ -1,0 +1,80 @@
+<!-- This XML file is for the main screen.
+We use a linear layout as it is set in a vertical row
+We just set the color to black  and set it to vertical orientation -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <!-- This is the ImageView used for the logo. -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@+strings/EasyTuneLogo"
+        android:src="@drawable/logo" />
+
+    <!-- This creates an orange border around the buttons -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/orange"
+        android:orientation="vertical"
+        android:padding="5dp" >
+        
+		<!-- Creates a black background behind the buttons -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/black"
+            android:orientation="vertical"
+            android:padding="15dp" >
+			
+            <!-- Here are the 3 buttons -->
+            <Button
+                android:id="@+id/AutoTune"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/roundedbutton"
+                android:text="@string/AutoTune"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/SelectTuning"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/roundedbutton"
+                android:text="@string/SelectTuning"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/PlayNote"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/roundedbutton"
+                android:text="@string/PlayNote"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

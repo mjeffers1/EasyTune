@@ -1,0 +1,165 @@
+<!-- Uses a relative layout so we can add in a scroll view -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black" >
+	
+    <!-- Creates a scroll view so the user can scroll through the tunings if the screen is too small -->
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:scrollbars="none" >
+
+        <!-- Uses a linear layout as scroll view can only have one child, this holds the buttons -->
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="vertical" >
+	
+            <!-- All of these buttons represent the tunings -->
+            <Button
+                android:id="@+id/StandardTuning"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/roundedbutton"
+                android:onClick="selectTuning"
+                android:text="@string/StandardTuning"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" >
+            </Button>
+
+            <Button
+                android:id="@+id/DropC"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/roundedbutton"
+                android:onClick="selectTuning"
+                android:text="@string/DropC"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" >
+            </Button>
+
+            <Button
+                android:id="@+id/DropD"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/roundedbutton"
+                android:onClick="selectTuning"
+                android:text="@string/DropD"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" >
+            </Button>
+
+            <Button
+                android:id="@+id/OpenA"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/roundedbutton"
+                android:onClick="selectTuning"
+                android:text="@string/OpenA"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" >
+            </Button>
+
+            <Button
+                android:id="@+id/OpenB"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/roundedbutton"
+                android:onClick="selectTuning"
+                android:text="@string/OpenB"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" >
+            </Button>
+
+            <Button
+                android:id="@+id/OpenC"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/roundedbutton"
+                android:onClick="selectTuning"
+                android:text="@string/OpenC"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" >
+            </Button>
+
+            <Button
+                android:id="@+id/OpenD"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/roundedbutton"
+                android:onClick="selectTuning"
+                android:text="@string/OpenD"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" >
+            </Button>
+
+            <Button
+                android:id="@+id/OpenE"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/roundedbutton"
+                android:onClick="selectTuning"
+                android:text="@string/OpenE"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" >
+            </Button>
+
+            <Button
+                android:id="@+id/OpenF"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/roundedbutton"
+                android:onClick="selectTuning"
+                android:text="@string/OpenF"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" >
+            </Button>
+
+            <Button
+                android:id="@+id/OpenG"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/roundedbutton"
+                android:onClick="selectTuning"
+                android:text="@string/OpenG"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" >
+            </Button>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

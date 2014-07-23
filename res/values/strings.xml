@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">EasyTune</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+	<string name="AutoTune">Auto Tune</string>
+	<string name="SelectTuning">Select Tuning</string>
+	<string name="PlayNote">Play Note</string>
+	<string name="NearestNoteText">Nearest Note</string>
+	<string name="NoteTemp">E#</string>
+	<string name="NotePitch">1</string>
+	<string name="YourCurrentPitchText">Your Current Pitch</string>
+	<string name="CurrentPitchTemp">37.88</string>
+	<string name="StandardTuning">Standard Tuning</string>
+	<string name="E">E</string>
+	<string name="A">A</string>
+	<string name="D">D</string>
+	<string name="G">G</string>
+	<string name="DropD">Drop D</string>
+	<string name="DropC">Drop C</string>
+	<string name="OpenA">Open A</string>
+	<string name="OpenB">Open B</string>
+	<string name="OpenC">Open C</string>
+	<string name="OpenD">Open D</string>
+	<string name="OpenE">Open E</string>
+	<string name="OpenF">Open F</string>
+	<string name="OpenG">Open G</string>
+	<string name="B">B</string>
+	<string name="C">C</string>
+	<string name="F">F</string>
+	<string name="TuneToText">Tune To</string>
+	<string name="ChangeTuning">Change Tuning</string>
+	<string name="CSharp">C#</string>
+	<string name="FSharp">F#</string>
+	<string name="GSharp">G#</string>
+	<string name="NearestNotePitch">Note Pitch</string>
+	<string name="ASharp">A#</string>
+	<string name="DSharp">D#</string>
+	<string name="EasyTuneLogo">The logo for EasyTune</string>
+</resources>

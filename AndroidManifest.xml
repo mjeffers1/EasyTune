@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="martin.andy.easytunetuner"
+    android:versionCode="2"
+    android:versionName="2.1" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+    	<uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.easytune.MainActivity"
+            android:launchMode="singleTask"
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.Black.NoTitleBar"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        	<service android:name="org.puredata.android.service.PdService" />
+        	<activity android:name="com.example.easytune.PlayNote"></activity>
+        	<activity android:name="com.example.easytune.Tune"></activity>
+        	<activity android:name="com.example.easytune.StandardTune"></activity>
+        	<activity android:name="com.example.easytune.DropD"></activity>
+        	<activity android:name="com.example.easytune.SelectTuning"
+        	    android:theme="@android:style/Theme.Black.NoTitleBar"></activity>
+        	<activity android:name="com.example.easytune.DropC"></activity>
+        	<activity android:name="com.example.easytune.OpenA"></activity>
+        	<activity android:name="com.example.easytune.OpenB"></activity>
+        	<activity android:name="com.example.easytune.OpenC"></activity>
+        	<activity android:name="com.example.easytune.OpenD"></activity>
+        	<activity android:name="com.example.easytune.OpenE"></activity>
+        	<activity android:name="com.example.easytune.OpenF"></activity>
+        	<activity android:name="com.example.easytune.OpenG"></activity>
+        	<activity android:name="com.example.easytune.AutoTune"></activity>
+        	
+    </application>
+
+</manifest>
